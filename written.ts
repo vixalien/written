@@ -463,7 +463,7 @@ export const ordinal = (
       return w;
     }
   } else {
-    let suffix = suffixes[base] || suffixes.n;
+    let suffix = suffixes[base as string] || suffixes.n;
     if (typeof suffix === "object") {
       suffix = suffix[gender];
     }
